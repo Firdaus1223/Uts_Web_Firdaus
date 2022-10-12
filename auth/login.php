@@ -11,8 +11,8 @@ if (isset($_SESSION['status'])) {
 }
 
 if (isset($_POST['username'])) {
-  if ($_POST['username'] == 'alfi' && $_POST['password'] == 'alfi') {
-    $_SESSION['username'] = 'alfi';
+  if ($_POST['username'] == 'daus' && $_POST['password'] == '123456') {
+    $_SESSION['username'] = 'daus';
     $_SESSION['role'] = 'admin';
     $_SESSION['status'] = "login";
     header("Location:../admin/dashboard");
@@ -31,7 +31,7 @@ if (isset($_POST['username'])) {
   <div class="col-12 d-flex align-items-center justify-content-center">
     <div class="bg-white shadow border-0 rounded border-light p-4 p-lg-5 w-100 fmxw-500">
       <div class="text-center text-md-center mb-4 mt-md-0">
-        <img src="../assets/web/img/logo/logo.png" style="height: 100px;" alt="">
+        <img src="../assets/img/logo.png" style="height: 250px;" alt="">
       </div>
       <form action="" class="mt-4" method="POST">
         <!-- Form -->

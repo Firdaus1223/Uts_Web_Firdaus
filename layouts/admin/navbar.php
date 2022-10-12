@@ -1,7 +1,6 @@
 <nav class="navbar navbar-light navbar-theme-primary px-4 col-12 d-lg-none">
   <a class="navbar-brand me-lg-5" href="../../assets/dashboard/index.html">
-    <img class="navbar-brand-dark" src="../../assets/web/img/logo/logo.png" alt="Volt logo" /> 
-    <img class="navbar-brand-light" src="../../assets/web/img/logo/logo.png" alt="Volt logo" />
+    <h2 class="text-white">My Book</h2>
   </a>
   <div class="d-flex align-items-center">
     <button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">

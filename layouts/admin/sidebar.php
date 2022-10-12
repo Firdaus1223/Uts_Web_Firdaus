@@ -3,7 +3,7 @@
   <li class="nav-item">
     <a href="<?= $_SESSION['role'] == 'admin' ? '../../admin/dashboard' : '../../user/dashboard' ?>" class="nav-link d-flex align-items-center justify-content-center">
       <span class="sidebar-icon">
-        <img src="../../assets/web/img/logo/logo.png" height="60">
+        <img src="../../assets/img/logo.png" height="140">
       </span>
     </a>
   </li>
@@ -17,27 +17,27 @@
   </li>
   <?php if($_SESSION['role'] == 'admin'): ?>
     <li class="nav-item">
-    <a href="../../admin/order/create.php" class="nav-link d-flex justify-content-between">
+    <a href="../../admin/book/create.php" class="nav-link d-flex justify-content-between">
       <span>
         <span class="sidebar-icon"><i class="fa-solid fa-plus"></i></span>
-        <span class="sidebar-text">Tambah Pesanan</span>
+        <span class="sidebar-text">Tambah Buku</span>
       </span>
     </a>
   </li>
   <li class="nav-item">
-    <a href="../../admin/order" class="nav-link d-flex justify-content-between">
+    <a href="../../admin/book" class="nav-link d-flex justify-content-between">
       <span>
-        <span class="sidebar-icon"><i class="fa-solid fa-futbol"></i></span>
-        <span class="sidebar-text">Pesanan</span>
+        <span class="sidebar-icon"><i class="fa-solid fa-book"></i></span>
+        <span class="sidebar-text">Daftar Buku</span>
       </span>
     </a>
   </li>
   <?php else: ?>
     <li class="nav-item">
-    <a href="../../user/order" class="nav-link d-flex justify-content-between">
+    <a href="../../user/book" class="nav-link d-flex justify-content-between">
       <span>
-        <span class="sidebar-icon"><i class="fa-solid fa-futbol"></i></span>
-        <span class="sidebar-text">Pesanan</span>
+        <span class="sidebar-icon"><i class="fa-solid fa-book"></i></span>
+        <span class="sidebar-text">Daftar Buku</span>
       </span>
     </a>
   </li>
