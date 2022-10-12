@@ -5,19 +5,19 @@
     <div class="py-4">
         <div class="d-flex justify-content-between w-100 flex-wrap">
             <div class="mb-3 mb-lg-0">
-                <h1 class="h4">Pesanan</h1>
+                <h1 class="h4">Daftar Buku</h1>
             </div>
         </div>
     </div>
     <div class="card border-0 shadow components-section">
         <div class="card-body">
-            <table class="datatable table w-full">
+        <table class="datatable table w-full">
                 <thead>
                     <tr>
-                        <th></th>
-                        <th>Jenis</th>
-                        <th>Layanan</th>
-                        <th>Tanggal Ambil</th>
+                        <th>No.</th>
+                        <th>Cover</th>
+                        <th>Judul</th>
+                        <th>Total Halaman</th>
                     </tr>
                 </thead>
                 <tbody></tbody>
