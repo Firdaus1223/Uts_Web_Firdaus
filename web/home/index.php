@@ -1,154 +1,80 @@
 <?php require_once('../../layouts/web/header.php') ?>
 
-<main>
-    <!--? slider Area Start-->
-    <div class="slider-area  position-relative ">
-        <div class="slider-active">
-            <!-- Single Slider -->
-            <div class="single-slider position-relative hero-overly slider-height  d-flex align-items-center" data-background="../../assets/web/img/hero/h1_hero.png">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6">
-                            <div class="hero-caption">
-                                <img class="rotateme" src="../../assets/web/img/hero/hero-icon.png" alt="" data-animation="zoomIn" data-delay="1s">
-                                <h1 data-animation="fadeInLeft" data-delay=".4s">Kami membuat pakaian yang cocok untuk Anda</h1>
-                                <a href="#" class="btn" data-animation="fadeInLeft" data-delay=".8s">Login</a>
-                            </div>
-                        </div>
+<!-- Products Start -->
+<div class="container-fluid pt-5">
+    <div class="text-center mb-4">
+        <h2 class="section-title px-5"><span class="px-2">Paling Banyak Dibaca</span></h2>
+    </div>
+    <div class="row px-xl-5 pb-3">
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1641154748135-8032a61a3f80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80" alt="">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Buku 1</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>24 Halaman - 12 Jan 21</h6>
                     </div>
                 </div>
-                <!-- Left img -->
-                <div class="hero-img">
-                    <img src="https://images.unsplash.com/photo-1621370688441-8ce43a9903dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" data-animation="fadeInRight" data-transition-duration="5s" style="background-size: cover; object-fit: cover;">
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Baca</a>
+                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-bookmark text-primary mr-1"></i>Tambah Bookmark</a>
                 </div>
             </div>
-            <!-- Single Slider -->
-            <div class="single-slider position-relative hero-overly slider-height  d-flex align-items-center" data-background="../../assets/web/img/hero/h1_hero.png">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6">
-                            <div class="hero-caption">
-                                <img class="rotateme" src="../../assets/web/img/hero/hero-icon.png" alt="" data-animation="zoomIn" data-delay="1s">
-                                <h1 data-animation="fadeInLeft" data-delay=".4s">We make cloths that suit you</h1>
-                                <p data-animation="fadeInLeft" data-delay=".6s">TLorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Suspendisse varius enim in eros elementum tristique. Duis
-                                    cursus, mi quis viverra ornare.</p>
-                                <!-- Hero Btn -->
-                                <a href="#" class="btn" data-animation="fadeInLeft" data-delay=".8s">Our Services</a>
-                            </div>
-                        </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" alt="">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Buku 2</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>24 Halaman - 12 Jan 21</h6>
                     </div>
                 </div>
-                <!-- Left img -->
-                <div class="hero-img">
-                    <img src="../../assets/web/img/hero/h1_hero1.png" alt="" data-animation="fadeInRight" data-transition-duration="5s">
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Baca</a>
+                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-bookmark text-primary mr-1"></i>Tambah Bookmark</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1629992101753-56d196c8aabb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=690&q=80" alt="">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Buku 3</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>24 Halaman - 12 Jan 21</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Baca</a>
+                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-bookmark text-primary mr-1"></i>Tambah Bookmark</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1610882648335-ced8fc8fa6b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Buku 1</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>24 Halaman - 12 Jan 21</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Baca</a>
+                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-bookmark text-primary mr-1"></i>Tambah Bookmark</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- slider Area End-->
-    <!--? Clients Offers Start -->
-    <div class="clients-area section-padding40">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-offers mb-50 wow fadeInUp" data-wow-delay=".2s">
-                        <div class="offers-img">
-                            <img src="../../assets/web/img/gallery/offers1.png" alt="">
-                        </div>
-                        <div class="offers-cap">
-                            <span>1</span>
-                            <h3><a href="services.html">Penjahitan</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-offers mb-50 wow fadeInUp" data-wow-delay=".4s">
-                        <div class="offers-img">
-                            <img src="../../assets/web/img/gallery/offers2.png" alt="">
-                        </div>
-                        <div class="offers-cap">
-                            <span>2</span>
-                            <h3><a href="services.html">Pengukuran</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-offers mb-50 wow fadeInUp" data-wow-delay=".6s">
-                        <div class="offers-img">
-                            <img src="../../assets/web/img/gallery/offers3.png" alt="">
-                        </div>
-                        <div class="offers-cap">
-                            <span>3</span>
-                            <h3><a href="services.html">Siap Pakai</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <section class="categories-area section-padding40">
-        <div class="container">
-            <!-- section Tittle -->
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-6 col-md-7 col-sm-9">
-                    <div class="section-tittle text-center mb-60">
-                        <h2>Kenapa Kami?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-cat mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                        <div class="cat-icon">
-                            <img src="../../assets/web/img/icon/services1.svg" alt="">
-                        </div>
-                        <div class="cat-cap">
-                            <h5>Tepat</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-cat mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                        <div class="cat-icon">
-                            <img src="../../assets/web/img/icon/services2.svg" alt="">
-                        </div>
-                        <div class="cat-cap">
-                            <h5>Cepat</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-cat mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                        <div class="cat-icon">
-                            <img src="../../assets/web/img/icon/services3.svg" alt="">
-                        </div>
-                        <div class="cat-cap">
-                            <h5>Mudah</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-cat mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                        <div class="cat-icon">
-                            <img src="../../assets/web/img/icon/services4.svg" alt="">
-                        </div>
-                        <div class="cat-cap">
-                            <h5>Murah</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
+</div>
 
 <?php require_once('../../layouts/web/footer.php') ?>
