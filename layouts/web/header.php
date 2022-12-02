@@ -1,3 +1,9 @@
+<?php
+include("../../core/functions.php");
+$categories = all("kategori");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +19,7 @@
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -82,43 +88,31 @@
                     <i class="fa fa-angle-down text-dark"></i>
                 </a>
                 <?php
-                    $link = $_SERVER['PHP_SELF'];
-                    $link_array = explode('/',$link);
+                $link = $_SERVER['PHP_SELF'];
+                $link_array = explode('/', $link);
                 ?>
-                <?php if(in_array("home", $link_array)): ?>
+                <?php if (in_array("home", $link_array)) : ?>
                     <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical">
                         <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
-                            <a href="" class="nav-item nav-link">Algoritma Pemrograman Lanjut</a>
-                            <a href="" class="nav-item nav-link">Kecerdasan Buatan</a>
-                            <a href="" class="nav-item nav-link">Probabilitas Statismatika</a>
-                            <a href="" class="nav-item nav-link">Struktru Data</a>
-                            <a href="" class="nav-item nav-link">Kalkulus I</a>
-                            <a href="" class="nav-item nav-link">Kalkulus II</a>
-                            <a href="" class="nav-item nav-link">Novel Romansa</a>
-                            <a href="" class="nav-item nav-link">Manga</a>
-                            <a href="" class="nav-item nav-link">Lainnya</a>
+                            <?php foreach ($categories as $category) : ?>
+                                <a href="" class="nav-item nav-link"><?= $category['nama'] ?></a>
+                            <?php endforeach; ?>
                         </div>
                     </nav>
-                <?php else: ?>
+                <?php else : ?>
                     <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 1;">
                         <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
-                            <a href="" class="nav-item nav-link">Algoritma Pemrograman Lanjut</a>
-                            <a href="" class="nav-item nav-link">Kecerdasan Buatan</a>
-                            <a href="" class="nav-item nav-link">Probabilitas Statismatika</a>
-                            <a href="" class="nav-item nav-link">Struktru Data</a>
-                            <a href="" class="nav-item nav-link">Kalkulus I</a>
-                            <a href="" class="nav-item nav-link">Kalkulus II</a>
-                            <a href="" class="nav-item nav-link">Novel Romansa</a>
-                            <a href="" class="nav-item nav-link">Manga</a>
-                            <a href="" class="nav-item nav-link">Lainnya</a>
+                            <?php foreach ($categories as $category) : ?>
+                                <a href="" class="nav-item nav-link"><?= $category['nama'] ?></a>
+                            <?php endforeach; ?>
                         </div>
                     </nav>
                 <?php endif; ?>
-                
+
             </div>
             <div class="col-lg-9">
                 <?php require_once('navbar.php') ?>
-                <?php if(in_array("home", $link_array)): ?>
+                <?php if (in_array("home", $link_array)) : ?>
                     <div id="header-carousel" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active" style="height: 410px;">

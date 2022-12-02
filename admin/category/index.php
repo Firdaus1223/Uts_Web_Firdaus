@@ -1,11 +1,6 @@
 <?php require_once('../../layouts/admin/header.php') ?>
 <?php
-$books = query("SELECT
-    buku.*,
-    kategori.nama as nama_kategori
-    FROM buku
-    JOIN kategori ON buku.id_kategori=kategori.id
-");
+$categories = all("kategori");
 ?>
 
 <div id="main" class="min-vh-100 pt-4">
@@ -23,32 +18,21 @@ $books = query("SELECT
                 <thead>
                     <tr>
                         <th></th>
-                        <th>Cover</th>
-                        <th>Judul</th>
-                        <th>Kategori</th>
+                        <th>Nama</th>
                         <th>Deskripsi</th>
-                        <th>Halaman</th>
-                        <th>Tanggal Rilis</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php $i = 1; ?>
-                    <?php foreach ($books as $book) : ?>
+                    <?php foreach ($categories as $category) : ?>
                         <tr>
                             <th><?= $i ?></th>
+                            <td><?= $category['nama'] ?></td>
+                            <td><?= $category['deskripsi'] ?></td>
                             <td>
-                                <img src="<?= $book['cover'] ?>" alt="" class="img-fluid img-thumbnail" style="height: 100px;" >
-                            </td>
-                            <td><?= $book['judul'] ?></td>
-                            <td><?= $book['nama_kategori'] ?></td>
-                            <td><?= $book['deskripsi'] ?></td>
-                            <td><?= $book['halaman'] ?></td>
-                            <td><?= $book['tanggal_rilis'] ?></td>
-
-                            <td>
-                                <a href="./delete.php?id=<?= $book['id'] ?>" class="btn btn-sm btn-danger">Hapus</a>
-                                <a href="./edit.php?id=<?= $book['id'] ?>" class="btn btn-sm btn-warning">Ubah</a>
+                                <a href="./delete.php?id=<?= $category['id'] ?>" class="btn btn-sm btn-danger">Hapus</a>
+                                <a href="./edit.php?id=<?= $category['id'] ?>" class="btn btn-sm btn-warning">Ubah</a>
                             </td>
                         </tr>
                         <?php $i++ ?>

@@ -16,14 +16,6 @@
     </a>
   </li>
   <?php if($_SESSION['role'] == 'admin'): ?>
-    <li class="nav-item">
-    <a href="../../admin/book/create.php" class="nav-link d-flex justify-content-between">
-      <span>
-        <span class="sidebar-icon"><i class="fa-solid fa-plus"></i></span>
-        <span class="sidebar-text">Tambah Buku</span>
-      </span>
-    </a>
-  </li>
   <li class="nav-item">
     <a href="../../admin/book" class="nav-link d-flex justify-content-between">
       <span>
@@ -32,12 +24,20 @@
       </span>
     </a>
   </li>
+  <li class="nav-item">
+    <a href="../../admin/category" class="nav-link d-flex justify-content-between">
+      <span>
+        <span class="sidebar-icon"><i class="fa-solid fa-list"></i></span>
+        <span class="sidebar-text">Daftar Kategori</span>
+      </span>
+    </a>
+  </li>
   <?php else: ?>
     <li class="nav-item">
-    <a href="../../user/book" class="nav-link d-flex justify-content-between">
+    <a href="../../user/bookmark" class="nav-link d-flex justify-content-between">
       <span>
-        <span class="sidebar-icon"><i class="fa-solid fa-book"></i></span>
-        <span class="sidebar-text">Daftar Buku</span>
+        <span class="sidebar-icon"><i class="fa-solid fa-bookmark"></i></span>
+        <span class="sidebar-text">Bookmark</span>
       </span>
     </a>
   </li>

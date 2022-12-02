@@ -1,6 +1,6 @@
 <?php
+    ob_start();
     session_start();
-    include("../../core/config.php");
     include("../../core/functions.php");
     if($_SESSION['status']!="login"){
       header("location:../../index.php");
@@ -35,3 +35,4 @@
 
 <body>
 <?php require_once('navbar.php') ?>
+<?php require_once('../../layouts/component/flash.php') ?>
